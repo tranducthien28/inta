@@ -1101,6 +1101,94 @@ header{
     }
 }
 
+.blog2{    
+    .tit{
+        padding-bottom: 15px;
+        border-bottom: 1px solid $--border-color-2;
+        margin-bottom: 25px;
+        .name{
+            @include font(spd-bold, 26px, $--color-text);
+            margin-bottom: 25px;
+        }
+        .date-share{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .date{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                @include font(spd, 15px, $--color-text);
+            }
+            .share{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                @include font(spd-light, 14px, $--color-text);
+            }
+        }
+    }
+    .desc{
+        margin-bottom: 55px;
+        strong{
+            @include font(spd-bold, 15px, $--color-text);
+        }
+        .image-center, .image-left, .image-right{
+            margin-top: 30px;
+            margin-bottom: 30px;           
+            figcaption{
+                @include font(spd, 15px, $--color-text);
+                padding: 15px 0;                
+            }
+        }
+    }
+    .news-related{
+        position: relative;
+        .title{
+            color: $--color-text;
+            font-size: 26px;
+            margin-bottom: 25px;
+        }
+        .newsest-slide{            
+            .project-item{
+                background: $--color-white;
+                .img{
+                    margin-bottom: 20px;
+                }
+                .txt{
+                    padding: 0;
+                    .name{
+                        @include font(spd, 15px, $--color-text);
+                        text-align: justify;
+                    }
+                }
+            }
+            .owl-nav{
+                margin: 0;
+                position: absolute;
+                top: -35px;
+                transform: translateY(-100%);
+                right: 0;
+                .owl-next, .owl-prev{
+                    i{
+                        font-size: 20px;
+                        color: #666666;
+                    }
+                    &:hover{
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pro-slide{
+    &._project2{
+        margin-bottom: 25px;
+    }
+}
+
 footer{
     background: $--main-color;
     padding: 40px 0;
@@ -1207,6 +1295,7 @@ footer{
         line-height: 1.5;
         margin-bottom: 10px;
         margin-top: 0;
+        font-size: spd;
     }
 
     strong {
@@ -1252,7 +1341,7 @@ footer{
     }
 
     .image-center {
-        margin-bottom: 10px;
+        margin: auto;
         text-align: center;
         display: flex;
         align-items: center;
@@ -1261,8 +1350,7 @@ footer{
 
         figcaption {
             @include font(spd, 14px, #333);
-            padding: 5px 0;
-            font-style: italic;
+            padding: 5px 0;            
         }
 
         @include maxWidth(767px) {
@@ -1285,12 +1373,12 @@ footer{
         align-items: end;
         justify-content: center;
         flex-direction: column;
-        float: right;
+        float: right;   
 
         figcaption {
-            background: #f1f1f1;
-            padding: 5px 0;
-            font-style: italic;
+            background: $--color-figcaption;
+            padding: 5px 0;        
+            margin: auto;    
         }
 
         @include maxWidth(767px) {

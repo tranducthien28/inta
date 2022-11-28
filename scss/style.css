@@ -1244,6 +1244,98 @@ header .lang {
   color: #333;
 }
 
+.blog2 .tit {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 25px;
+}
+.blog2 .tit .name {
+  font-family: spd-bold;
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 25px;
+}
+.blog2 .tit .date-share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog2 .tit .date-share .date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: spd;
+  font-size: 15px;
+  color: #333;
+}
+.blog2 .tit .date-share .share {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: spd-light;
+  font-size: 14px;
+  color: #333;
+}
+.blog2 .desc {
+  margin-bottom: 55px;
+}
+.blog2 .desc strong {
+  font-family: spd-bold;
+  font-size: 15px;
+  color: #333;
+}
+.blog2 .desc .image-center, .blog2 .desc .image-left, .blog2 .desc .image-right {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.blog2 .desc .image-center figcaption, .blog2 .desc .image-left figcaption, .blog2 .desc .image-right figcaption {
+  font-family: spd;
+  font-size: 15px;
+  color: #333;
+  padding: 15px 0;
+}
+.blog2 .news-related {
+  position: relative;
+}
+.blog2 .news-related .title {
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+.blog2 .news-related .newsest-slide .project-item {
+  background: #fff;
+}
+.blog2 .news-related .newsest-slide .project-item .img {
+  margin-bottom: 20px;
+}
+.blog2 .news-related .newsest-slide .project-item .txt {
+  padding: 0;
+}
+.blog2 .news-related .newsest-slide .project-item .txt .name {
+  font-family: spd;
+  font-size: 15px;
+  color: #333;
+  text-align: justify;
+}
+.blog2 .news-related .newsest-slide .owl-nav {
+  margin: 0;
+  position: absolute;
+  top: -35px;
+  transform: translateY(-100%);
+  right: 0;
+}
+.blog2 .news-related .newsest-slide .owl-nav .owl-next i, .blog2 .news-related .newsest-slide .owl-nav .owl-prev i {
+  font-size: 20px;
+  color: #666666;
+}
+.blog2 .news-related .newsest-slide .owl-nav .owl-next:hover, .blog2 .news-related .newsest-slide .owl-nav .owl-prev:hover {
+  background: transparent;
+}
+
+.pro-slide._project2 {
+  margin-bottom: 25px;
+}
+
 footer {
   background: #010005;
   padding: 40px 0;
@@ -1353,6 +1445,7 @@ footer .contact-ft .copyright {
   line-height: 1.5;
   margin-bottom: 10px;
   margin-top: 0;
+  font-size: spd;
 }
 .detail-content strong {
   font-family: spd-bold;
@@ -1391,7 +1484,7 @@ footer .contact-ft .copyright {
   list-style-type: decimal;
 }
 .detail-content .image-center {
-  margin-bottom: 10px;
+  margin: auto;
   text-align: center;
   display: flex;
   align-items: center;
@@ -1403,7 +1496,6 @@ footer .contact-ft .copyright {
   font-size: 14px;
   color: #333;
   padding: 5px 0;
-  font-style: italic;
 }
 @media (max-width: 767px) {
   .detail-content .image-center figure {
@@ -1425,9 +1517,9 @@ footer .contact-ft .copyright {
   float: right;
 }
 .detail-content .image-right figcaption {
-  background: #f1f1f1;
+  background: #efefef;
   padding: 5px 0;
-  font-style: italic;
+  margin: auto;
 }
 @media (max-width: 767px) {
   .detail-content .image-right {
