@@ -869,6 +869,9 @@ header .lang {
   justify-content: center;
 }
 
+._contact {
+  margin-bottom: 45px;
+}
 ._contact ._contact-cnt {
   display: flex;
   align-items: flex-start;
@@ -902,11 +905,68 @@ header .lang {
   color: #333;
 }
 ._contact ._contact-cnt .info-com p:last-of-type {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 ._contact ._contact-cnt .info-com .local .tit {
   margin-bottom: 15px;
   text-transform: none;
+}
+._contact ._contact-cnt .info-com .local:last-of-type p:last-of-type {
+  margin-bottom: 0;
+}
+._contact ._contact-cnt .right {
+  padding-right: 40px;
+  width: calc((100% - 45px) / 2);
+  height: 470px;
+  overflow: auto;
+}
+._contact ._contact-cnt .right .item {
+  padding: 25px;
+  background: #f2f2f2;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+._contact ._contact-cnt .right .item .name {
+  font-family: spd-bold;
+  font-size: 17px;
+  color: #e40520;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+._contact ._contact-cnt .right .item .address {
+  font-family: spd;
+  font-size: 15px;
+  color: #010005;
+  margin-bottom: 15px;
+}
+._contact ._contact-cnt .right .item .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #fff;
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #b9b9b9;
+  font-family: spd;
+  font-size: 14px;
+  color: #737373;
+  transition: background 0.2s linear;
+}
+._contact ._contact-cnt .right .item .btn i {
+  color: #e40520;
+}
+._contact ._contact-cnt .right .item .btn:hover {
+  background: #e40520;
+  color: #fff;
+}
+._contact ._contact-cnt .right .item .btn:hover i {
+  color: #fff;
+}
+._contact ._contact-cnt .right .item:last-of-type {
+  margin-bottom: 0;
 }
 
 .form-flex {
@@ -1334,6 +1394,39 @@ header .lang {
 
 .pro-slide._project2 {
   margin-bottom: 25px;
+}
+
+.agency {
+  margin-bottom: 30px;
+}
+.agency form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.agency form .input {
+  height: 35px;
+  width: calc((100% - 160px) / 4);
+}
+.agency form .input input, .agency form .input select {
+  height: 100%;
+  width: 100%;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+}
+.agency form .input input:focus, .agency form .input select:focus {
+  outline: none;
+}
+.agency form button {
+  height: 35px;
+  width: 120px;
+  border: none;
+  background: #e40520;
+  font-family: spd;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 5px;
 }
 
 footer {
